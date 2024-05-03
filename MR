@@ -2,4 +2,3 @@ library("TwoSampleMR")
 a <- read.table("SNP_gwas_mc_merge_nogc.tbl.txt",header = T)#导入数据，第一行做表头
 b <- subset(a,p<5e-08)#subset函数-筛选1.提取p值小于5e-08的数据
 write.csv(b,file = "exposure_bmi.csv")#读成excle格式（工作目录里），改下表头
-c <- read.table("Snp")
